@@ -26,7 +26,7 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('category_bookmark', {
+    await queryInterface.createTable('category_product', {
       id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,
@@ -65,7 +65,7 @@ module.exports = {
   },
 
   down: async (queryInterface) => {
-    await queryInterface.dropTable('category_bookmark');
+    await queryInterface.dropTable('category_product');
     await queryInterface.dropTable('categories');
   },
 };
