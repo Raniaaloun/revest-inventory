@@ -1,5 +1,7 @@
 'use strict';
 
+import fs from 'fs';
+import path from 'path';
 import { basename as _basename } from 'path';
 import Sequelize, { DataTypes } from 'sequelize';
 import { env as _env } from 'process';
